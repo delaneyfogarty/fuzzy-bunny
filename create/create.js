@@ -1,8 +1,8 @@
-import { 
-    createBunny, 
-    getFamilies, 
-    checkAuth, 
-    logout 
+import {
+  createBunny,
+  getFamilies,
+  checkAuth,
+  logout
 } from '../fetch-utils.js';
 
 const form = document.querySelector('.bunny-form');
@@ -14,11 +14,11 @@ form.addEventListener('submit', async e => {
     // get the name and family id from the form
 
     // use createBunny to create a bunny with this name and family id
-    
-    form.reset();
+
+  form.reset();
 });
 
-window.addEventListener('load', async() => {
+window.addEventListener('load', async () => {
     // let's dynamically fill in the families dropdown from supabase
     // grab the select HTML element from the DOM
 
@@ -37,5 +37,5 @@ window.addEventListener('load', async() => {
 checkAuth();
 
 logoutButton.addEventListener('click', () => {
-    logout();
+  logout();
 });
