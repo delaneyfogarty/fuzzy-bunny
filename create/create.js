@@ -24,6 +24,7 @@ form.addEventListener('submit', async e => {
   });
 
   form.reset();
+  window.location.href = '../families';
 });
 
 window.addEventListener('load', async () => {
