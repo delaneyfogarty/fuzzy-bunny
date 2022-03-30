@@ -32,8 +32,8 @@ async function fetchAndDisplayFamilies() {
         //    </div>
         // </div>
         // add the bunnies css class to the bunnies el, and family css class to the family el
-    bunniesDiv.classList.add('bunny-div');
-    familyDiv.classList.add('family-div');
+    bunniesDiv.classList.add('bunnies');
+    familyDiv.classList.add('family');
         // put the family name in the name element
     familyNameEl.textContent = family.name;
         // for each of this family's bunnies
@@ -51,7 +51,7 @@ async function fetchAndDisplayFamilies() {
 
       bunniesDiv.append(bunnyEl);
     }
-    familyDiv.append(bunniesDiv, familyNameEl);
+    familyDiv.append(familyNameEl, bunniesDiv);
 
     familiesEl.append(familyDiv);
         //    make an element with the css class 'bunny', and put the bunny's name in the text content
